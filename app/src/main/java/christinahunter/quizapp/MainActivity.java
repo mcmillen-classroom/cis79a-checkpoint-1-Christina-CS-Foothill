@@ -2,6 +2,7 @@ package christinahunter.quizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView myTextView = (TextView) v;
         Toast myToast = Toast.makeText(this, "You just clicked " +
                 myTextView.getText(),Toast.LENGTH_SHORT);
-        //myToast.setGravity();
+        myToast.setGravity(Gravity.TOP,0,0);
         myToast.show();
 
     }
